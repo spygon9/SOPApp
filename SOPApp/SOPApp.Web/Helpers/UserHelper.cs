@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using SOPApp.Shared.DTO;
 using SOPApp.Shared.Entities;
 using SOPApp.Web.Data;
 
@@ -35,10 +36,10 @@ namespace SOPApp.Web.Helpers
             throw new NotImplementedException();
         }
 
-        //public async Task<SignInResult> LoginAsync(LoginDTO login)
-        //{
-        //    return await signInManager.PasswordSignInAsync(login.Email, login.Password, false, false);
-        //}
+        public async Task<SignInResult> LoginAsync(LoginDTO login)
+        {
+            return await signInManager.PasswordSignInAsync(login.Email, login.Password, false, false);
+        }
 
         public async Task LogoutAsync()
         {
