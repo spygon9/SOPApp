@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using SOPApp.Web.Data;
+
 namespace SOPApp.Web
 {
     public class Program
@@ -8,6 +11,7 @@ namespace SOPApp.Web
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+            builder.Services.AddDbContext<DataContext>(x => x.UseSqlServer("name=con"));
 
             var app = builder.Build();
 

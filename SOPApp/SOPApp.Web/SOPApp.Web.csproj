@@ -15,4 +15,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SOPApp.Shared\SOPApp.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SOPApp.Shared.Entities;
 
 namespace SOPApp.Web.Data
 {
@@ -12,7 +13,7 @@ namespace SOPApp.Web.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<User>().HasIndex(x => x.Email)IsUnique();
+            modelBuilder.Entity<User>().HasIndex(x => x.Email).IsUnique();
         }
     }
 }
