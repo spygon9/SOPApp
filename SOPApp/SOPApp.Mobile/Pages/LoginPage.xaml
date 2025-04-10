@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SOPApp.Mobile.Pages.LoginPage"
+             Title="LoginPage">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <!-- Logo -->
+            <Image Source="logo.png" HeightRequest="100" HorizontalOptions="Center" />
+
+            <!-- Título -->
+            <Label Text="Bienvenida" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+
+            <!-- Campo de Email -->
+            <Entry Placeholder="Email" Keyboard="Email" />
+
+            <!-- Campo de Contraseña -->
+            <Entry Placeholder="Contraseña" IsPassword="True" />
+
+            <!-- Botón de Iniciar sesión -->
+            <Button Text="Iniciar sesión" BackgroundColor="Blue" TextColor="White" CornerRadius="10" Clicked="LoginClicked"/>
+
+            <!-- Registro -->
+            <Button Text="No tienes cuenta? Regístrate" TextColor="Blue" BackgroundColor="Transparent" Clicked="RegisterClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

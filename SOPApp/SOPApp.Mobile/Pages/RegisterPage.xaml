@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SOPApp.Mobile.Pages.RegisterPage"
+             Title="RegisterPage">
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <!-- Logo -->
+        <Image Source="logo.png" HeightRequest="100" HorizontalOptions="Center" />
+
+        <!-- Título -->
+        <Label Text="Registro" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" />
+
+        <!-- Campo de Nombre -->
+        <Entry Placeholder="Nombre" Keyboard="Text" />
+
+        <!-- Campo de Email -->
+        <Entry Placeholder="Email" Keyboard="Email" />
+
+        <!-- Campo de Contraseña -->
+        <Entry Placeholder="Contraseña" IsPassword="True" />
+
+        <!-- Campo de Repetir Contraseña -->
+        <Entry Placeholder="Repetir contraseña" IsPassword="True" />
+
+        <!-- Botón de Registrarse -->
+        <Button Text="Registrarse" BackgroundColor="Blue" TextColor="White" CornerRadius="10" Clicked="LoginClicked" />
+
+        <!-- Ya tienes cuenta? -->
+        <Button Text="Ya tienes cuenta? Inicia sesión" TextColor="Blue" BackgroundColor="Transparent" Clicked="LoginClicked" />
+
+    </VerticalStackLayout>
+</ContentPage>

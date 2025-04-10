@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SOPApp.Mobile.Pages.RemindersPage"
+             Title="RemindersPage">
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="15">
+
+            <!-- Título sección activos -->
+            <Label Text="Recordatorios activos"
+                   FontAttributes="Bold"
+                   FontSize="Medium"
+                   Margin="0,10,0,0"/>
+
+            <!-- Recordatorios activos -->
+            <Frame BackgroundColor="#333333" CornerRadius="8" Padding="10" HasShadow="False">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Recordatorio" TextColor="White" FontAttributes="Bold"/>
+                    <Label Text="Lorem ipsum" TextColor="White"/>
+                    <Image Source="alarm_icon.png" HorizontalOptions="End"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="#333333" CornerRadius="8" Padding="10" HasShadow="False">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Recordatorio" TextColor="White" FontAttributes="Bold"/>
+                    <Label Text="Lorem ipsum" TextColor="White"/>
+                    <Image Source="bell_icon.png" HorizontalOptions="End"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="#333333" CornerRadius="8" Padding="10" HasShadow="False">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Recordatorio" TextColor="White" FontAttributes="Bold"/>
+                    <Label Text="Lorem ipsum" TextColor="White"/>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+                        <Image Source="bell_icon.png" Margin="0,0,5,0"/>
+                        <Image Source="alarm_icon.png"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+            <!-- Título sección inactivos -->
+            <Label Text="Recordatorios inactivos"
+                   FontAttributes="Bold"
+                   FontSize="Medium"
+                   Margin="0,20,0,0"/>
+
+            <!-- Recordatorios inactivos -->
+            <Frame BackgroundColor="White" BorderColor="#CCCCCC" CornerRadius="8" Padding="10" HasShadow="False">
+                <StackLayout>
+                    <Label Text="Recordatorio" FontAttributes="Bold" TextColor="Black"/>
+                    <Label Text="Lorem ipsum" TextColor="Gray"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="White" BorderColor="#CCCCCC" CornerRadius="8" Padding="10" HasShadow="False">
+                <StackLayout>
+                    <Label Text="Recordatorio" FontAttributes="Bold" TextColor="Black"/>
+                    <Label Text="Lorem ipsum" TextColor="Gray"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="White" BorderColor="#CCCCCC" CornerRadius="8" Padding="10" HasShadow="False">
+                <StackLayout>
+                    <Label Text="Recordatorio" FontAttributes="Bold" TextColor="Black"/>
+                    <Label Text="Lorem ipsum" TextColor="Gray"/>
+                </StackLayout>
+            </Frame>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
